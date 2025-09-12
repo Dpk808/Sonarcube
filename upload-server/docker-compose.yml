@@ -1,0 +1,15 @@
+version: "3.9"
+# test 1
+services:
+  upload-server:
+    image: python:3.11-slim
+    container_name: upload-server
+    working_dir: /app
+    command: >
+      sh -c "pip install flask prometheus-flask-exporter && python app.py"
+    ports:
+      - "5000:80"
+    volumes:
+      - ./app.py:/app/app.py
+      - ./uploads:/app/uploads
+    restart: always
