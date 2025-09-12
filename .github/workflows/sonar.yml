@@ -37,7 +37,7 @@ jobs:
           pip install flask==3.0.3
           pip install prometheus-flask-exporter==0.23.1
 
-      # SonarCloud Scan
+      # SonarCloud Scan 1
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@v2
         with:
