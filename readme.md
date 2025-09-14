@@ -33,6 +33,16 @@ We initially configured GitHub Actions workflows (`ci-cd.yml` and `sonar.yml`) t
 - Despite this, **SonarCloud successfully scanned the repository** because of the direct GitHub → SonarCloud integration.
 - This shows that even without GitHub Actions, SonarCloud can independently perform scans when linked with a repository.
 
+# Getting the token of the Sonarcloud and keeping it in secrets in the github repo:
+
+  ![image alt](https://github.com/Dpk808/Sonarcube/blob/main/screenshots/1.1_sonarcloud_token.png) 
+  
+
+# And when the project is connected to the Sonarcloud, we can analyze the project for ulnerabilities from the sonarcloud platform itself:
+
+  ![image alt](https://github.com/Dpk808/Sonarcube/blob/main/screenshots/1.5_sonarcloud%20results.png) 
+  
+
 ---
 
 ## ✅ Lessons Learned
